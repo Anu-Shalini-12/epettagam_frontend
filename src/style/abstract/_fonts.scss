@@ -1,0 +1,24 @@
+.themeColor{
+    color:#0058A9;
+}
+.themeBack{
+    background:#0058A9;
+}
+
+.backgroundColor{
+    background: $themeBackground;
+}
+
+.backgroundColorWhite{
+    background: $whiteBackground;
+}
+
+$credit_queue_tabs_font1:0.7rem;
+$credit_queue_tabs_font2:0.8rem;
+$credit_queue_tabs_font3:0.9rem;
+
+
+//Standard Font Size
+
+$font_size_small:0.7rem;
+$font_size_big:0.8rem;

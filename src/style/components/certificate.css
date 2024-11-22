@@ -1,0 +1,386 @@
+@media screen and (max-width: 400px){
+    #vewrified_Img{
+        width:60px;
+        height: 60px;
+    }
+    #consentState{
+        margin-top: 3rem;
+    }
+    #registration-Page1{
+        margin-left: 4%;
+    }
+    #SecureDataButton{width:108%}
+    #mobileDoc{
+        width: 103%;
+        overflow: auto;
+        border: 2px solid black;
+        margin-left: 2%;
+        height: 350px;
+    }
+    #certbutton{
+        padding: 7px 15px;
+        color:#457FCA;
+        border:2px solid #457FCA;
+        border-radius: 23px;
+        width: fit-content;
+        margin-left: 11%;
+        margin-top: 4rem;
+    }
+    .reg_label{
+        font-weight: 600;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    #reg_para{
+        font-weight: 500;
+        font-size: 12px;
+        margin-top: 2rem;
+    }
+    #reg_para span{
+        color: blue;
+    }
+    #pdfFormat{
+        height: 450px;
+        height: 211px;
+        width: 60%;
+        margin-bottom: 20px;
+        border:2px solid black;
+        margin-top:1rem;
+        margin-left:20%;
+    }
+    #Proceed_button{ 
+        margin-left: 10%;
+        border: 2px solid #154272;
+        font-size: 12px;
+        color: white;
+        background: #154272;
+        padding: 5px;
+        border-radius: 18px;
+    }
+    #DownloadButton{
+        background:#154272;
+        border: 1px solid #457fca;
+        border-radius: 7px;
+        color: white;
+        padding: 5px 20px;
+        cursor: pointer;
+        font-weight:600;
+        margin-left:4%;
+    }
+    #DownloadButton1{
+        background:#154272;
+        border: 1px solid #457fca;
+        border-radius: 7px;
+        color: white;
+        padding: 5px 20px;
+        cursor: pointer;
+        font-weight:600;
+        margin-left:4%;
+    }
+    #buttonArea{
+        display: grid;
+    }
+    #valueData{
+        font-size: 12px;
+    }
+    #variable{
+        font-size: 12px;
+    }
+    #herebydata{
+        margin-left: 10px;
+        font-size:13px;
+        margin-top: 2rem;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 800px){
+    #vewrified_Img{
+        width:60px;
+        height: 60px;
+    }
+    #esevaiTab{
+        width:125%;
+    }
+    #consentState{
+        margin-top: 1.5rem;
+    }
+    #SecureDataButton{width:52%}
+    #certbutton{
+        padding: 7px 15px;
+        color:#457FCA;
+        border:2px solid #457FCA;
+        border-radius: 23px;
+        width: fit-content;
+        margin-left: 40%;
+        margin-top: 4rem;
+    }
+    #registration-Page1{
+        width: 115%;
+    }
+    .reg_label{
+        font-weight: 600;
+        font-size: 15px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    #mobileDoc{
+        width: 93%;
+        overflow: auto;
+        border: 2px solid black;
+        margin-left: 0%;
+        height: 350px;
+    }
+    #reg_para{
+        font-weight: 500;
+        font-size: 15px;
+        margin-top: 1rem;
+        margin-left: 5rem;
+    }
+    #valueArea{
+        width: 90%;
+        margin-left: 5%;
+    }
+    #hereData{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 3rem;
+    }
+    #reg_para span{
+        color: blue;
+    }
+    #pdfFormat{
+        height: 450px;
+        height: 211px;
+        width: 60%;
+        margin-bottom: 20px;
+        border:2px solid black;
+        margin-top:1rem;
+        margin-left:20%;
+    }
+    #Proceed_button{
+        margin-left: -3%;
+        margin-bottom: 2rem;
+        border: 2px solid #154272;
+        font-size: 14px;
+        width: auto;
+        margin-top: 2rem;
+        color: white;
+        background: #154272;
+        padding: 5px 35px;
+        border-radius: 18px;
+    }
+    #DownloadButton{
+        background:#154272;
+        border: 1px solid #457fca;
+        border-radius: 7px;
+        color: white;
+        padding: 5px 20px;
+        cursor: pointer;
+        font-weight:600;
+        margin-left:4%;
+        width: fit-content;
+        margin-left: 33%;
+    }
+    #DownloadButton1{
+        background:#154272;
+        border: 1px solid #457fca;
+        border-radius: 7px;
+        color: white;
+        padding: 5px 20px;
+        cursor: pointer;
+        font-weight:600;
+        margin-left:4%;
+        width: fit-content;
+    }
+    #buttonArea{
+        display: flex;
+    }
+    #valueData{
+        font-size: 12px;
+    }
+    #variable{
+        font-size: 12px;
+    }
+    #herebydata{
+        margin-left: 10px;
+        font-size:13px;
+        margin-top: 0rem;
+    }    
+}
+
+@media screen and (min-width: 801px){
+    #vewrified_Img{
+        width:60px;
+        height: 60px;
+    }
+    #certbutton{
+        padding: 7px 15px;
+        color:#457FCA;
+        border:2px solid #457FCA;
+        border-radius: 23px;
+        width: fit-content;
+        margin-left: 40%;
+        margin-top: 4rem;
+    }
+    .reg_label{
+        font-weight: 600;
+        font-size: 19px;
+        margin-left: 20px;
+        margin-top: 1rem;
+    }
+    #reg_para{
+        font-weight: 500;
+        font-size: 15px;
+        margin-top: 0rem;
+        margin-left: 5rem;
+    }
+    #reg_para span{
+        color: blue;
+    }
+    #pdfFormat{
+        height: 450px;
+        height: 211px;
+        width: 60%;
+        margin-bottom: 20px;
+        border:2px solid black;
+        margin-top:1rem;
+        margin-left:20%;
+    }
+    #Proceed_button{
+        margin-left: 0%;
+        border: 2px solid #154272;
+        font-size: 12px;
+        color: white;
+        background: #154272;
+        padding: 5px;
+        border-radius: 18px;
+        width:40%
+    }
+    #DownloadButton{
+        background:#154272;
+        border: 1px solid #457fca;
+        border-radius: 7px;
+        color: white;
+        padding: 5px 20px;
+        cursor: pointer;
+        font-weight:600;
+        margin-left:25%;
+        width: 25%;
+    }
+    #DownloadButton1{
+        background:#154272;
+        border: 1px solid #457fca;
+        border-radius: 7px;
+        color: white;
+        padding: 5px 20px;
+        cursor: pointer;
+        font-weight:600;
+        margin-left:4%;
+        width: 25%;
+    }
+    #buttonArea{
+        display: flex;
+    }
+    #valueData{
+        font-size: 12px;
+    }
+    #variable{
+        font-size: 12px;
+    }
+    #herebydata{
+        margin-left: 10px;
+        font-size:13px;
+        margin-top: 0rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #vewrified_Img{
+        width:60px;
+        height: 60px;
+    }
+    #certbutton{
+        padding: 7px 15px;
+        color:#457FCA;
+        border:2px solid #457FCA;
+        border-radius: 23px;
+        width: fit-content;
+        margin-left: 40%;
+        margin-top: 4rem;
+    }
+    .reg_label{
+        font-weight: 600;
+        font-size: 22px;
+        margin-top: 14px;
+        margin-left: 20px;
+    }
+    #reg_para{
+        font-weight: 500;
+        font-size: 16px;
+        margin-left: 81px;
+        margin-top: 2rem
+    }
+    #reg_para span{
+        color: blue;
+    }
+    #pdfFormat{
+        height: 450px;
+        height: 500px;
+        width: 60%;
+        margin-bottom: 20px;
+        border:2px solid black;
+        margin-top:1rem;
+        margin-left:20%;
+    }
+    #labelCert label{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #Proceed_button{
+        margin-left: 0%;
+        border: 2px solid #154272;
+        width: fit-content;
+        font-size: 16px;
+        color: white;
+        background: #154272;
+        padding: 10px 35px;
+    }
+    #DownloadButton{
+        background:#154272;
+        border: 1px solid #457fca;
+        border-radius: 7px;
+        color: white;
+        padding: 5px 20px;
+        cursor: pointer;
+        font-weight:600;
+        margin-left:4%;
+        width: fit-content;
+        margin-left: 33%;
+    }
+    #DownloadButton1{
+        background:#154272;
+        border: 1px solid #457fca;
+        border-radius: 7px;
+        color: white;
+        padding: 5px 20px;
+        cursor: pointer;
+        font-weight:600;
+        margin-left:4%;
+        width: fit-content;
+    }
+    #buttonArea{
+        display: flex;
+    }
+    #valueData{
+        font-size: 16px;
+    }
+    #variable{
+        font-size: 16px;
+        font-weight: bold;
+        
+    }
+    #herebydata{
+        margin-left: 10px;
+        font-size:16px;
+        margin-top: 0rem;
+    }
+}

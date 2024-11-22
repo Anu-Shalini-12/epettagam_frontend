@@ -1,0 +1,1 @@
+export const BASE_URL = "https://www.epettagam.tn.gov.in/wallet/";

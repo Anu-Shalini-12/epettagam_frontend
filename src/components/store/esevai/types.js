@@ -1,0 +1,9 @@
+export const GET_ALL_SERVICES = 'GET_ALL_SERVICES'
+export const LOGIN_ACTION = 'LOGIN_ACTION'
+export const LOGIN_ACTION_ERR = "LOGIN_ACTION_ERR"
+export const GET_CERTIFICATE = 'GET_CERTIFICATE'
+export const CLOSE_MODAL = 'CLOSE_MODAL'
+export const CERT_DATA = 'CERT_DATA'
+export const LOGIN_OTP = 'LOGIN_OTP'
+export const SHARE_CERT = 'SHARE_CERT'
+export const LOGIN_OTP_ERR = 'LOGIN_OTP_ERR' 

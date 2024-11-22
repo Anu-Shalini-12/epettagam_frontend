@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Group_1436" data-name="Group 1436" transform="translate(-39 -354)">
+    <g id="Rectangle_3421" data-name="Rectangle 3421" transform="translate(39 354)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="32" height="32" stroke="none"/>
+      <rect x="0.5" y="0.5" width="31" height="31" fill="none"/>
+    </g>
+    <path id="Icon_material-report-problem" data-name="Icon material-report-problem" d="M1.5,22.777H24.4L12.95,3Zm12.491-3.123H11.909V17.572h2.082Zm0-4.164H11.909V11.327h2.082Z" transform="translate(41.963 357.025)" fill="#ca4545"/>
+  </g>
+</svg>

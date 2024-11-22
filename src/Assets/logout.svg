@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Group_1376" data-name="Group 1376" transform="translate(-49 -607)">
+    <g id="Rectangle_3421" data-name="Rectangle 3421" transform="translate(49 607)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="30" height="30" stroke="none"/>
+      <rect x="0.5" y="0.5" width="29" height="29" fill="none"/>
+    </g>
+    <path id="Icon_open-account-logout" data-name="Icon open-account-logout" d="M7.538,0V2.513h10.05V15.075H7.538v2.513H20.1V0ZM5.025,5.025,0,8.794l5.025,3.769V10.05h10.05V7.538H5.025Z" transform="translate(53.5 613)" fill="#d15959"/>
+  </g>
+</svg>

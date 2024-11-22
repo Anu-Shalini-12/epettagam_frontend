@@ -1,0 +1,599 @@
+.width100{
+    width: 100%;
+}
+.height100{
+    height: 100%;
+}
+@mixin centerContentBoxWithoutColumn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+@mixin centerContentBox {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+@mixin centerContentBoxHorizontal{
+    display:flex;
+    // flex-direction:column;
+    justify-content:center;
+}
+
+@mixin centerContentBoxVertical{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+@mixin logoScss{
+   .logo{ text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    height: 20%;
+    img{
+        width:70%;
+        height:50px;
+        margin: auto;
+    }
+    }
+}
+//  New SCSS
+@mixin rootLayout{
+    width:100vw;
+    height: 100vh;
+    }
+
+.myCursor{
+    cursor: pointer;
+}
+@mixin primaryCard($height) {
+    margin-top: 2rem;
+    border: 1px solid #B5D2ED;
+    width:100%;
+    height: $height;
+    box-shadow: 0px 3px 10px #DDE8F245;
+    
+    background-color: white;
+}
+@mixin leadTopCards($color, $borderColor) {
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+    width:18%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background-color: $color;
+}
+@mixin secondaryBtn{
+    background: linear-gradient(180deg,#878181, #3D3A3A);
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px #00000029;
+    border:none;
+    font-size: x-small;
+    color:white;
+}
+@mixin primaryBtn {
+    background: linear-gradient(360deg,#2884DE, #008DDB, #20AFFA);
+    border-radius: 5px;
+    color:white;
+    font-size: x-small;
+    box-shadow: 0px 3px 6px #00000029;
+    border:none;
+}
+
+@mixin successBtn {
+    background: rgb(33, 211, 33);
+    border-radius: 5px;
+    color:white;
+    font-size: x-small;
+    box-shadow: 0px 3px 6px #00000029;
+    border:none;
+}
+
+@mixin dangerBtn {
+    background: rgb(243, 37, 37);
+    border-radius: 5px;
+    color:white;
+    font-size: x-small;
+    box-shadow: 0px 3px 6px #00000029;
+    border:none;
+}
+// ************************************ Admin Layout Start ******************************************
+
+@mixin adminHeader($h) {
+    width:100%;
+    height: $h;
+    background-color: #2884DE;
+    position: fixed;
+    display: flex;
+}
+
+// ************************************ Admin Layout End ******************************************
+
+@mixin fieldInput {
+    border-left: none;
+    border-right: none;
+    border-top:none;
+    outline: none;
+    width:100%;
+    height: 2rem;
+    font-size: small;
+    background-color: $whiteBackground;
+    border-bottom: 1px solid $borderColor_3;
+}
+
+@mixin leadsCardsDesign($color1, $color2){
+    width: 17%;
+    height: 75px;
+    border-radius: 10px;
+    background-color: $color1;
+    border:1px solid $color2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin leadsCardIcon1($w){
+    width:$w;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:first baseline;
+    padding-left:10px;
+}
+
+@mixin leadsCardInfo($c1,$c2, $w){
+    width: $w;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    div{
+        .numInfo{
+            font-size: large;
+            font-weight: 550;
+            color:$c1;
+            // position: absolut/e;
+            // left:0;
+        }
+        .statusInfo{
+            font-size: small;
+            color:#818181;
+            // position: absolute;
+            // left:0;
+        }
+    }
+}
+
+@mixin blackCheckBox {
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked{
+        position: absolute;
+        left:-9999px;
+    }
+    [type="checkbox"]:not(:checked)+label,
+    [type="checkbox"]:checked+label{
+        // cursor: pointer;
+        position: relative;
+        padding-left: 25px;
+        cursor: pointer;
+    }
+    [type="checkbox"]:not(:checked)+label:before,
+    [type="checkbox"]:checked+label:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -12px;
+        width: 15px;
+        height: 15px;
+        background: #fff;
+        border-radius: 3px;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .1);
+        border:1px solid rgba(0, 0, 0, .4);
+        // border-radius: 50%;
+        // background-color: $borderColor_3;
+        outline: none;
+    }
+    [type="checkbox"]:not(:checked)+label:after,
+    [type="checkbox"]:checked+label:after {
+    content: '✔';
+    position: absolute;
+    top: -7px;
+    left: 2.5px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 0.4;
+    color: #333333;
+    transition: all .2s;
+    }
+    [type="checkbox"]:not(:checked)+label:after {
+        opacity: 0;
+        transform: scale(0);
+      }
+      
+      [type="checkbox"]:checked+label:after {
+        opacity: 1;
+        transform: scale(1);
+      }
+}
+
+
+@mixin greenCheckBox {
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked{
+        position: absolute;
+        left:-9999px;
+    }
+    [type="checkbox"]:not(:checked)+label,
+    [type="checkbox"]:checked+label{
+        // cursor: pointer;
+        position: relative;
+        padding-left: 25px;
+        cursor: pointer;
+    }
+    [type="checkbox"]:not(:checked)+label:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -12px;
+        width: 15px;
+        height: 15px;
+        background: #fff;
+        border-radius: 3px;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .1);
+        border:1px solid rgba(0, 0, 0, .4);
+        // border-radius: 50%;
+        // background-color: $borderColor_3;
+        outline: none;
+    }
+
+    [type="checkbox"]:checked+label:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -12px;
+        width: 15px;
+        height: 15px;
+        background: #fff;
+        border-radius: 3px;
+        // box-shadow: inset 0 3px 5px rgba(0, 0, 0, .1);
+        border:1px solid #4CAF50;//rgba(0, 0, 0, .4);
+        // border-radius: 50%;
+        // background-color: $borderColor_3;
+        outline: none;
+    }
+    [type="checkbox"]:not(:checked)+label:after,
+    [type="checkbox"]:checked+label:after {
+    content: '✔';
+    position: absolute;
+    top: -7px;
+    left: 2.5px;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 0.4;
+    color: #4CAF50;
+    transition: all .2s;
+    }
+    [type="checkbox"]:not(:checked)+label:after {
+        opacity: 0;
+        transform: scale(0);
+      }
+      
+      [type="checkbox"]:checked+label:after {
+        opacity: 1;
+        transform: scale(1);
+      }
+}
+
+.fieldCntainerNew{
+    margin:1rem 0;
+   div{
+    width: 80%;
+    margin-left: 6%;
+    .s3drp{
+        position:relative;
+        background-color:red;
+    }
+    .searchDropDown, .searchDropDown2, .searchDropDown3{
+        position:relative;
+        .input[type="text"]::placeholder{
+            font-size: 0.8rem; // x-small;
+            color:#333333;//#474747
+        }
+        // .input::-webkit-autofill {
+        //     color: #fff !important;
+        // }
+        
+        .dropList{
+            position:absolute;
+            z-index: 999;
+            width:100%;
+            left:0;
+            background-color: #fff;
+            box-shadow:  0px 3px 6px #00000029;
+            border-radius: 5px;
+            opacity: 0;
+            pointer-events: none;
+            ul{
+                margin-left: 0;
+                text-decoration: none;
+                list-style: none;
+                width:100%;
+                padding-left: 0;
+                li{
+                    height: 2rem;
+                    font-size: 0.8rem;//small;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 0.5rem;
+                    // display: none;
+                }
+                li:hover{
+                    cursor: pointer;
+                    background-color: #e0e5e7;
+                }
+            }
+        }
+    }
+    .searchDropDown.active .dropList,  .searchDropDown2.active .dropList, .searchDropDown3.active .dropList{
+        opacity: 1;
+        pointer-events: auto;
+        ul{
+            li{
+                
+                display: block
+            }
+        }
+    }
+    label{
+        color:$textColor_5;
+        font-size: 0.8rem;//x-small;
+        font-family: 'Lato', sans-serif;
+        font-weight: 2px;
+        // opacity: 1;
+    }
+    .dynamicbox{
+        margin-top: 1rem;
+        display: inline-flex;
+        div:nth-child(1){
+            background-color: #FFFFFF;
+            box-shadow: inset 0px 3px 6px #00000029;
+            border: 1px solid #D9D9D9;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            width:fit-content;
+            height: 1rem;
+            font-size: x-small;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+        div:nth-child(2){
+            width:1rem;
+            height: 1rem;
+            margin-left: 0;
+            background-color: #F99393;
+            border:1px solid #F99393;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            font-size: x-small;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .userProfilePic{
+        // width:100%;
+        div:nth-child(1){
+            background-color: #F1F1F1;
+            color:#7070707C;
+            border:1px solid #D1CFCF;
+            width: 132px;
+            font-size: 100px;
+            height: 140px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            float: right;
+            margin-right: 3rem;
+            img{
+                width:100px;
+            }
+        }
+        .editPicture{
+            background-color: #fff;
+            // color:#7070707C;
+            width: 132px;
+            display: inline-flex;
+            align-items: center;
+            justify-content:end;
+            float: right;
+            margin-right: 3rem;
+            img{
+                width:9px
+            }
+            img:hover{
+                width:10px;
+                cursor: pointer;
+            }
+        }
+        // div:nth-child(2){
+            
+        // }
+    }
+    input[type="text"],  input[type="password"],  input[type="date"], input[type="email"]{
+        border-left: none;
+        border-right: none;
+        border-top:none;
+        outline: none;
+        width:100%;
+        height: 2rem;
+        color:#333333;
+        // font-family: 'Lato', Bold;
+        font-weight: bold;
+        font-size: 0.8rem;//small;
+        border-bottom: 0px solid #333333;
+    }
+    // input[type="text"]:-webkit-autofill{
+    //     -webkit-background: red !important;
+    // }
+
+    // .input::-webkit-autofill {
+    //     color: #fff !important;
+    // }    
+    // input[type="password"]{
+    //     border-left: none;
+    //     border-right: none;
+    //     border-top:none;
+    //     font-size: small;
+    //     outline: none;
+    //     width:100%;
+    //     height: 2rem;
+    //     border-bottom: 1px solid #333333;
+    // }
+    // input[type="date"]{
+    //     border-left: none;
+    //     border-right: none;
+    //     border-top:none;
+    //     font-size: small;
+    //     outline: none;
+    //     width:100%;
+    //     height: 2rem;
+    //     border-bottom: 1px solid #333333;
+    // }
+    select{
+        border-left: none;
+        border-right: none;
+        border-top:none;
+        outline: none;
+        font-size: 0.8rem;//x-small;
+        width:100%;
+        height: 2rem;
+        color:#333333;
+        font-family: 'Lato', sans-serif;
+        font-weight: 520;
+        background-color: #fff;
+        border-bottom: 1px solid #333333;
+    }
+//     option[default] {
+//         font-weight: 520;
+//         font-size: 0.8rem;
+//         color:#333333;
+// }
+    // input[type="email"]{
+    //     border-left: none;
+    //     border-right: none;
+    //     border-top:none;
+    //     outline: none;
+    //     font-size: small;
+    //     width:100%;
+    //     height: 2rem;
+    //     border-bottom: 1px solid #333333;
+    // }
+    input[type="radio"]{
+        border-left: none;
+        border-right: none;
+        border-top:none;
+        outline: none;
+        font-size: small;
+        width:100%;
+        // background-color: ;
+        // height: 2rem;
+        border-bottom: 1px solid #333333;
+    }
+    input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #333333;//#333333;
+        font-size: 0.8rem;//x-small;
+        font-weight: 520;
+      }
+    .newSection{
+        margin-top:1rem;
+    }
+    .manatory{
+        position:relative;
+        display: flex;
+        align-items: center;
+        .subTitle{
+            font-size: 0.7rem;
+            font-weight: bold;
+            color:#8D8D8D;
+        }
+        .mandIcon{
+            position: absolute;
+            left:0;
+            font-size: x-small;
+        }
+    }
+    .genderCss{
+        div{
+            margin:0.5rem 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            font-size: x-small;
+            color:#474747;
+        }
+    }
+    // background-color: #000000;
+   }
+   
+}
+
+//******************Admin************************
+// Credit Queue
+@mixin CQ_tabs_container($bgColor,$shadow,$pad,$h){
+    
+    background-color: $bgColor;
+    height: $h;
+    box-shadow: $shadow;
+    display: flex;
+    align-items: center;
+    padding:$pad;
+    position:relative;
+}
+@mixin CQ_tabs($bgColor,$txtColor,$borderColor,$fontsize,$pad,$height) {
+    height: $height;
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bgColor;
+    border:1px solid $borderColor;
+    color:$txtColor;
+    padding: $pad;
+    font-size: $fontsize;
+    font-weight: bold;
+    transition: all 0.17s ease-in-out;
+    cursor: pointer;
+}
+
+//**********************Admin Vertical Bar***********************
+@mixin menuImageIcon{
+    width: 0.9rem;
+    filter:none;
+}
+@mixin menuImageIcon2{
+    filter:invert(26%) sepia(16%) saturate(5490%) hue-rotate(161deg) brightness(91%) contrast(98%);
+    transition-delay:filter 0.3s ease-in-out;
+}
+@mixin menuBox($d,$mt,$mb,$al) {
+    display: $d;
+    margin-top: $mt;
+    margin-bottom: $mb;
+    align-items: $al;
+}
+
+@mixin scrollable{
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+@mixin hoverTitleEffect{
+    color:#03596E;
+    font-weight: bold;
+    background-color: #fff;
+    padding:0.6rem 0;
+    cursor: pointer;
+    transition:all 0.1s ease-in-out;
+}
