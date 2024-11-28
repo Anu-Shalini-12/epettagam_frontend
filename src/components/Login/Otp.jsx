@@ -19,7 +19,7 @@ import loader from "../../Assets/Rolling-1s-200px.gif";
 import { useTranslation } from "react-i18next";
 
 
-function Otp() {
+function Otp() { debugger;
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   let otpVerification = useSelector(
@@ -340,6 +340,7 @@ function Otp() {
                         onChange={handleChange}
                         numInputs={6}
                         separator={<span>{` - `}</span>}
+                        renderInput={(props) => <input {...props} />}
                         inputStyle={{
                           border: "1px solid #4984CA",
                           margin: "6px",

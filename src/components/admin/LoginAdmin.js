@@ -97,7 +97,7 @@ class LoginAdmin extends Component {
     });
   };
 
-  handleGenerateOtp = () => {
+  handleGenerateOtp = () => { debugger;
     this.setState({
       showOtp: false
     })
