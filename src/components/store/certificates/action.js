@@ -35,14 +35,14 @@ import {
 import axios from "axios";
 import Swal from "sweetalert2";
 import "react-toastify/dist/ReactToastify.css";
-import { BASE_URL } from "../../utilities/config"; 
+import { BASE_URL } from "../../utilities/config";
 
 /* AXIOS INTERCEPTOR */
 axios.interceptors.response.use(
   (res) => res,
   (err) => {
     if (err?.response?.status === 502) {
-      window.location.href = "/service-unavailable"; 
+      window.location.href = "/service-unavailable";
     }
     if (err?.response?.status === 401) {
       // sessionStorage.clear();
@@ -109,7 +109,7 @@ export const postDistrictApi = (data) => (dispatch) => {
 };
 
 
-export const postZoneApi = (data,data1) => (dispatch) => {
+export const postZoneApi = (data, data1) => (dispatch) => {
   const API_URL = `${DEV_URL}rg/reg_zone`;
   axios
     .get(API_URL, {
@@ -159,7 +159,7 @@ export const adminConcurrency = () => {
     });
 };
 
-export const getAllUsers = (data,data1) => (dispatch) => {
+export const getAllUsers = (data, data1) => (dispatch) => {
   const API_URL = `${DEV_URL}ad/dash/users?pageNo=${data}&size=${data1}`;
   axios
     .get(API_URL, {
@@ -197,7 +197,7 @@ export const getRevokedUsers = () => (dispatch) => {
     });
 };
 
-export const getAllBlockedUsers = (data,data1) => (dispatch) => {
+export const getAllBlockedUsers = (data, data1) => (dispatch) => {
   const API_URL = `${DEV_URL}ad/dash/get_blocked_users?pageNo=${data}&size=${data1}`;
   axios
     .get(API_URL, {
@@ -236,11 +236,11 @@ export const getTotalNumberUsers = () => (dispatch) => {
     });
 };
 
-export const blockUser = (id,data) => (dispatch) => {
-  let API_URL=''
-  if(data == 'block'){
+export const blockUser = (id, data) => (dispatch) => {
+  let API_URL = ''
+  if (data == 'block') {
     API_URL = `${DEV_URL}ad/dash/blockuser`;
-  }else{
+  } else {
     API_URL = `${DEV_URL}ad/dash/approveuser`;
   }
   axios
@@ -371,7 +371,7 @@ export const MainLoginData = (body) => (dispatch) => {
     })
     .catch((err) => {
       dispatch({ type: MAIN_LOGIN_DATA_ERR, payload: err });
-      
+
     });
 };
 

@@ -3,11 +3,9 @@ import WebViewer from '@pdftron/webviewer'
 import { Buffer } from 'buffer'
 import { Document, Page, pdfjs } from 'react-pdf'
 import axios from 'axios';
-// import base64 from 'base64topdf'
-// import fs from 'fs'
 
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
+//pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/legacy/build/pdf.worker.min.mjs`
 const MyComponent = (pdfData) => {
   const viewer = useRef(null);
 

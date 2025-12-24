@@ -37,25 +37,6 @@ function AddEcertificates() {
   const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']
   const now = new Date().getUTCFullYear();    
 
-const sanitizeAlphanumeric = (value = '') =>
-  value
-    .replace(/<[^>]*>?/gm, '')   // remove HTML tags
-    .replace(/[^a-zA-Z0-9]/g, '') // allow only alphanumeric
-    .trim();
-
-    const sanitizeAlpha = (value = '') =>
-  sanitizeText(value).replace(/[^a-zA-Z\s]/g, '');
-
-const sanitizeNumber = (value = '') =>
-  value.replace(/[^0-9]/g, '');
-
-const sanitizeText = (value = '') =>
-  value
-    .replace(/<[^>]*>?/gm, '')   // remove HTML tags
-    .replace(/[<>]/g, '')        // remove angle brackets
-    .replace(/['"`;]/g, '')      // remove risky chars
-    .trim();
-
   useEffect(()=>{
       if(redirectScreen === true){
         const splitDate= startDate.split('-')
@@ -111,49 +92,16 @@ const sanitizeText = (value = '') =>
 
   useEffect(() => {}, [dept])
  
-  // const handleChange = (e) => {
-  //   let bool = null
-  //   if (e.target.value === 'true') {
-  //     bool = true
-  //   }
-  //   if (e.target.value === 'false') {
-  //     bool = false
-  //   }
-  //   setFormData((prev) => ({ ...prev, [e.target.id]: bool ?? e.target.value }))
-  // }
-
-const handleChange = (e) => {
-  const { id, value } = e.target;
-  let sanitizedValue = value;
-
-  switch (id) {
-    case 'rollNo':
-      sanitizedValue = sanitizeAlphanumeric(value).slice(0, 15); // adjust max length if needed
-      break;
-
-    case 'name':
-      sanitizedValue = sanitizeAlpha(value);
-      break;
-
-    case 'yop':
-      sanitizedValue = sanitizeNumber(value).slice(0, 4);
-      break;
-
-    case 'month':
-    case 'certType':
-      sanitizedValue = sanitizeText(value);
-      break;
-
-    default:
-      sanitizedValue = sanitizeText(value);
+  const handleChange = (e) => {
+    let bool = null
+    if (e.target.value === 'true') {
+      bool = true
+    }
+    if (e.target.value === 'false') {
+      bool = false
+    }
+    setFormData((prev) => ({ ...prev, [e.target.id]: bool ?? e.target.value }))
   }
-
-  setFormData((prev) => ({
-    ...prev,
-    [id]: sanitizedValue,
-  }));
-};
-
 
   const handleValidation = () => {
     let formIsValid = true;

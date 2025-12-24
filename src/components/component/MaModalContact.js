@@ -1,6 +1,7 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Modal from "@material-ui/core/Modal";
+// import { styled } from "@mui/material/styles";
+import { makeStyles } from '@mui/styles';
+import Modal from "@mui/material/Modal";
 
 // function rand() {
 //   return Math.round(Math.random() * 20) - 10;
@@ -27,7 +28,8 @@ const useStyles = makeStyles((theme) => ({
     // overflowX: "scroll",
     borderRadius: "10px",
     padding: "20px",
-    backgroundColor: theme.palette.background.paper,
+    background: 'rgba(69, 127, 202, 1)'
+    // backgroundColor: theme.palette.background.paper,
   },
 }));
 

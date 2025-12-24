@@ -15,7 +15,8 @@ import loading from "../../Assets/Loading_2.gif";
 import { useTranslation } from "react-i18next";
 
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+//pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/legacy/build/pdf.worker.min.mjs`
 function CertificateTab({ certificate, dataRec, urlData, EduCert }, props) {
   const { t, i18n } = useTranslation();
   let certDetails = useSelector((store) => store.certificate.certDetails);

@@ -60,32 +60,31 @@ function App() {
           <Route index element={<Home />} />
           <Route path="Registration" element={<RegistrationScreen />} />
           <Route path="eCertificates" element={<ECertificatesHome />} />
-          <Route path="eCertificates/addDocument"  element={<AddEcertificates />}/>
+          <Route path="eCertificates/addDocument" element={<AddEcertificates />} />
           <Route path="eCertificates/otp" element={<RegistrationOtp />} />
           <Route path="esevai" element={<Esevai />} />
           <Route path="esevai/otp" element={<EsevaiOtp />} />
           <Route path="esevai/addDocument" element={<AddDoument />} />
-          <Route path="Register_document_EduCertTab" element={<RegisterDocumentDMECertTab/>}/>
-          <Route path="Register_document_DiplomaCertTab" element={<DiplomaCertTab/>}/>
-          <Route path="Register_document_EsevaiCertTab" element={<RegisterDocumentEsevaiCertTab/>}/>
-          <Route path="Register_document_MCert" element={<RegisterDocumentMcert/>}/>
-          <Route path="Register_document_DCert" element={<RegisterDocumentDcert/>}/>
-          <Route path="Register_document_BCert" element={<RegisterDocument/>}/>
+          <Route path="Register_document_EduCertTab" element={<RegisterDocumentDMECertTab />} />
+          <Route path="Register_document_DiplomaCertTab" element={<DiplomaCertTab />} />
+          <Route path="Register_document_EsevaiCertTab" element={<RegisterDocumentEsevaiCertTab />} />
+          <Route path="Register_document_MCert" element={<RegisterDocumentMcert />} />
+          <Route path="Register_document_DCert" element={<RegisterDocumentDcert />} />
+          <Route path="Register_document_BCert" element={<RegisterDocument />} />
         </Route>
-
         <Route path="/Diploma/" element={<Header />}>
           <Route index element={<RegistrationOtp />} />
         </Route>
         <Route path="/MyDocument/" element={<Header />}>
           <Route index element={<HomeMyDoc />} />
-          <Route path="Register_document_RegCert" element={<RegisterDocumentRegCert/>}/>
-          <Route path="Register_document_EduCert" element={<RegisterDocumentEduCert/>}/>
-          <Route path="Register_document_DmeCert" element={<RegisterDocumentDMECert/>}/>
+          <Route path="Register_document_RegCert" element={<RegisterDocumentRegCert />} />
+          <Route path="Register_document_EduCert" element={<RegisterDocumentEduCert />} />
+          <Route path="Register_document_DmeCert" element={<RegisterDocumentDMECert />} />
         </Route>
         <Route path="/Document/Certificate" element={<Header />}>
           <Route index element={<DocumentScreen />} />
         </Route>
-        <Route path="/Certificate/MCert" element={<Header />}>
+        <Route path="`/Certificate/MCert`" element={<Header />}>
           <Route index element={<RegistrationMCertScreen />} />
         </Route>
         <Route path="/Certificate/DCert" element={<Header />}>
@@ -94,7 +93,6 @@ function App() {
         <Route path="/Certificate/BCert" element={<Header />}>
           <Route index element={<RegistrationBCertScreen />} />
         </Route>
-
 
 
 
