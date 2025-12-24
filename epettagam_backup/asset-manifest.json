@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.56cdb6f3.css",
+    "main.js": "/static/js/main.80a696f3.js",
+    "static/js/488.304171e7.chunk.js": "/static/js/488.304171e7.chunk.js",
+    "static/media/Privacy Policy (1) (1).pdf": "/static/media/Privacy Policy (1) (1).ad35be5ed06da5698a6e.pdf",
+    "static/media/MicrosoftTeams-image (7).png": "/static/media/MicrosoftTeams-image (7).aa44f923ba686eacc3c1.png",
+    "static/media/aboutUs.pdf": "/static/media/aboutUs.6a7bc9cfe2aacfa6e45d.pdf",
+    "static/media/privacyPolicies (1).pdf": "/static/media/privacyPolicies (1).a531fae8b2d46902392f.pdf",
+    "static/media/privacyPolicies.pdf": "/static/media/privacyPolicies.a531fae8b2d46902392f.pdf",
+    "static/media/SourceSansPro_Regular.ttf": "/static/media/SourceSansPro_Regular.df87f53caf449a3b7572.ttf",
+    "static/media/SourceSansPro_SemiBold.ttf": "/static/media/SourceSansPro_SemiBold.f2fa8f369db189665539.ttf",
+    "static/media/SourceSansPro_Bold.ttf": "/static/media/SourceSansPro_Bold.2dec2f24e3bdf2c6862e.ttf",
+    "static/media/Group 1404.png": "/static/media/Group 1404.8d70e3c10299f31595bb.png",
+    "static/media/Bimg.svg": "/static/media/Bimg.163c0ea2ebdcbfa05eb31dbc64d9655e.svg",
+    "static/media/gif": "/static/media/c7e1b7b5753737039e1bdbda578132b8.6f147a284d29a127c0f6.gif",
+    "static/media/anna-university.png": "/static/media/anna-university.3b8d60a440ff3d443a26.png",
+    "static/media/Group 1401.png": "/static/media/Group 1401.0b2658a5eabe15a82797.png",
+    "static/media/Group 1405.png": "/static/media/Group 1405.461f4909c0a6b0beb849.png",
+    "static/media/Rolling-1s-200px.gif": "/static/media/Rolling-1s-200px.8e661d83e83843a8a69d.gif",
+    "static/media/smallLogo.png": "/static/media/smallLogo.8b315608ec8479df2cda.png",
+    "static/media/Loading_2.gif": "/static/media/Loading_2.63d7da1bc33c0063002c.gif",
+    "static/media/Nambikkai iniyam logo1.png": "/static/media/Nambikkai iniyam logo1.2c4ddd7e08039cd67137.png",
+    "static/media/cloud-sync-icon.png": "/static/media/cloud-sync-icon.2d3779573db0db7ab586.png",
+    "static/media/MicrosoftTeams-image (1).png": "/static/media/MicrosoftTeams-image (1).bdae097508599f1a260b.png",
+    "static/media/dummy.pdf": "/static/media/dummy.1a7212338381990a3767.pdf",
+    "static/media/oie_QFXeBttXblCe.png": "/static/media/oie_QFXeBttXblCe.bd78562ec548188675d6.png",
+    "static/media/path0.svg": "/static/media/path0.aa0b6bcb11cca8f79ff06c667d970a7d.svg",
+    "index.html": "/index.html",
+    "static/media/Group 799.svg": "/static/media/Group 799.35671f20f196b5b1993c56ef45926368.svg",
+    "static/media/google-play.svg": "/static/media/google-play.2a9ec8522095ee55da6ad18b2cf3af0e.svg",
+    "main.56cdb6f3.css.map": "/static/css/main.56cdb6f3.css.map",
+    "main.80a696f3.js.map": "/static/js/main.80a696f3.js.map",
+    "488.304171e7.chunk.js.map": "/static/js/488.304171e7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56cdb6f3.css",
+    "static/js/main.80a696f3.js"
+  ]
+}

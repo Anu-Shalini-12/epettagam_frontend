@@ -37,6 +37,7 @@ import Swal from "sweetalert2";
 import "react-toastify/dist/ReactToastify.css";
 import { BASE_URL } from "../../utilities/config";
 
+
 /* AXIOS INTERCEPTOR */
 axios.interceptors.response.use(
   (res) => res,
@@ -360,20 +361,42 @@ export const GetCertificateXml = (dept, body, data) => (dispatch) => {
     });
 };
 
-export const MainLoginData = (body) => (dispatch) => {
+// export const MainLoginData = (body) => (dispatch) => {
+//   axios
+//     .post(DEV_URL + `user/login`, body)
+//     .then((response) => {
+//       return response.data;
+//     })
+//     .then((res) => {
+//       dispatch({ type: MAIN_LOGIN_DATA, payload: res });
+//     })
+//     .catch((err) => {
+//       dispatch({ type: MAIN_LOGIN_DATA_ERR, payload: err });
+
+//     });
+// };
+
+export const MainLoginData = (body, csrfToken) => (dispatch) => {
   axios
-    .post(DEV_URL + `user/login`, body)
-    .then((response) => {
-      return response.data;
-    })
+    .post(
+      DEV_URL + `user/login`,
+      body,
+      {
+        withCredentials: true,
+        headers: {
+          'X-CSRF-Token': csrfToken
+        }
+      }
+    )
+    .then((response) => response.data)
     .then((res) => {
       dispatch({ type: MAIN_LOGIN_DATA, payload: res });
     })
     .catch((err) => {
       dispatch({ type: MAIN_LOGIN_DATA_ERR, payload: err });
-
     });
 };
+
 
 export const otpVerify = (body) => (dispatch) => {
   axios

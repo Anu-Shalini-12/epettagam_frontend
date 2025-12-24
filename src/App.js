@@ -44,7 +44,6 @@ import RegisterDocumentDMECertTab from "./components/CertificateScreen/RegisterD
 import RegisterDocumentEsevaiCertTab from "./components/CertificateScreen/RegisterDocumentEsevaiCertTab"
 import DiplomaCertTab from "./components/CertificateScreen/DiplomaCertTab";
 
-
 function App() {
   return (
     <Router>

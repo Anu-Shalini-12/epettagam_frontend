@@ -32,6 +32,7 @@ function MainLogin() {
     (store) => store.certificate.getLogin_res_err
   );
   let bulkErr = useSelector((store) => store.certificate.get_bulk_err);
+  const [csrfToken, setCsrfToken] = useState(null);
   const [Adhaar, setAdhar] = useState("");
   const [captchabox, setcaptchabox] = useState();
   const [captchas, setCaptchas] = useState();
@@ -42,6 +43,12 @@ function MainLogin() {
   const [consent, setConsent] = useState(false);
   const [dataLoop, setData] = useState(false);
   const dispatch = useDispatch();
+
+  // useEffect(() => {
+  //   axios.get(`${BASE_URL}csrf-token`, { withCredentials: true })
+  //     .then(res => setCsrfToken(res.data.csrfToken))
+  //     .catch(err => console.error('CSRF token fetch failed', err));
+  // }, []);
 
   useEffect(() => {
     sessionStorage.clear()
@@ -198,7 +205,13 @@ function MainLogin() {
             captchaid: captchaId,
             captcha: captchabox,
           };
-          dispatch(MainLoginData(body));
+          // dispatch(MainLoginData(body));
+           if (!csrfToken) {
+              console.log(csrfToken,"token")
+              console.error("CSRF token not yet loaded");
+              return;
+            }
+         dispatch(MainLoginData(body, csrfToken));
         } else {
           Swal.fire({
             icon: "error",
