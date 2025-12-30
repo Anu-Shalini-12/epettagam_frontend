@@ -206,11 +206,11 @@ function MainLogin() {
             captcha: captchabox,
           };
           // dispatch(MainLoginData(body));
-           if (!csrfToken) {
-              console.log(csrfToken,"token")
-              console.error("CSRF token not yet loaded");
-              return;
-            }
+          //  if (!csrfToken) {
+          //     console.log(csrfToken,"token")
+          //     console.error("CSRF token not yet loaded");
+          //     return;
+          //   }
          dispatch(MainLoginData(body, csrfToken));
         } else {
           Swal.fire({
